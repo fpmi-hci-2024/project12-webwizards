@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: bsu.HMIP.Cifrovic.CifrovicApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.625 s -- in bsu.HMIP.Cifrovic.CifrovicApplicationTests
