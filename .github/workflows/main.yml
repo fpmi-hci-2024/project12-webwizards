@@ -9,8 +9,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          ref: development
 
       - name: Docker Compose Action
         uses: hoverkraft-tech/compose-action@v2.0.2
