@@ -10,7 +10,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          ref: development  
+          ref: development 
+
+                    
+      - name: Swagger UI Action
+        uses: Legion2/swagger-ui-action@v1.3.0
 
       - name: Docker Compose Action
         uses: hoverkraft-tech/compose-action@v2.0.2
