@@ -19,6 +19,12 @@ jobs:
           output: swagger-ui
           spec-file: backend/swagger.yaml
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: swagger-ui
 
       - name: Docker Compose Action
         uses: hoverkraft-tech/compose-action@v2.0.2
