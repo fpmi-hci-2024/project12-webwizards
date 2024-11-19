@@ -12,6 +12,10 @@ jobs:
         with:
           ref: development 
 
+      - name: Run tests
+        run: |
+          cd backend
+          mvn test
                     
       - name: Swagger UI Action
         uses: Legion2/swagger-ui-action@v1.3.0
