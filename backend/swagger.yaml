@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: Hello API
+  description: A simple API to return a greeting message.
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+paths:
+  /api/hello:
+    get:
+      summary: Returns a greeting message
+      operationId: getHello
+      responses:
+        '200':
+          description: A greeting message
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "Hello, World!"
+      tags:
+        - greeting
